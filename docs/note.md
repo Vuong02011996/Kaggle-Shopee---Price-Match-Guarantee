@@ -12,11 +12,8 @@
 1. 
     The RAPIDS data science framework includes a collection of libraries for executing end-to-end data science pipelines completely in the GPU
 
-2. 
-<<<<<<< HEAD
+2.
    But there actually isn't anything new to learn. All the API (commands) for Pandas work with RAPIDS cuDF and all the API (commands) for Scikit-Learn work with RAPIDS cuML. These RAPIDS libraries cuDF and cuML are the accelerated versions of Pandas and Scikit-Learn respectively. They run on GPU (instead of CPU) and give you the same API as Pandas and Scikit-Learn, and they give 10x to 1000x speed up!
 
-```# The best way to find out is to try it.- ```
-=======
-   But there actually isn't anything new to learn. All the API (commands) for Pandas work with RAPIDS cuDF and all the API (commands) for Scikit-Learn work with RAPIDS cuML. These RAPIDS libraries cuDF and cuML are the accelerated versions of Pandas and Scikit-Learn respectively. They run on GPU (instead of CPU) and give you the same API as Pandas and Scikit-Learn, and they give 10x to 1000x speed up!
->>>>>>> 38d3b9f51483f51e8c5b68f9cf3b0e5d42c6803c
+``` The best way to find out is to try it.- ```
+
