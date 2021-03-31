@@ -1,0 +1,5 @@
+numpy
+pandas
+tensorflow==2.4.1
+opencv-python
+matplotlib
