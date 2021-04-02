@@ -126,6 +126,7 @@ def find_similar_titles_with_rapids_knn():
 
         print(train_gf.loc[cupy.asnumpy(indices[k, :10]), ['title', 'label_group']])
 
+
 class DataGenerator(tf.keras.utils.Sequence):
     'Generates data for Keras'
     def __init__(self, df, img_size=256, batch_size=32, path=BASE):
