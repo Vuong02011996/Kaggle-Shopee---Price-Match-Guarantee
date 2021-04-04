@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcb16f7a-0910-4add-999e-87bd4ea29181" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/install.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/submit_code.py" afterDir="false" />
+    <list default="true" id="179fc915-8f22-4d01-befe-214dfd00be0e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/arcface.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/classification_cnn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/distance_vector.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/formula.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_EfficientNetB3_ArcMarginProduct.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/install.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/install.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/note.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1qU4S1G1SD5AjJg6okVUfekh6FJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1qeOdnkI1YtlNCKnr4TSU2iz0JY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,44 +36,24 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
   </component>
-  <component name="RunManager">
-    <configuration name="dataset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Kaggle-Shopee---Price-Match-Guarantee" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataset.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.dataset" />
-      </list>
-    </recent_temporary>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dcb16f7a-0910-4add-999e-87bd4ea29181" name="Default Changelist" comment="" />
-      <created>1617120831050</created>
+      <changelist id="179fc915-8f22-4d01-befe-214dfd00be0e" name="Default Changelist" comment="" />
+      <created>1617436679402</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1617120831050</updated>
+      <updated>1617436679402</updated>
     </task>
     <servers />
   </component>
@@ -83,12 +68,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="train.iloc[row, 1]" language="Python" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
