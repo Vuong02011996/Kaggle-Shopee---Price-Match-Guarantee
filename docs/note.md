@@ -1,8 +1,5 @@
 
-
 1/4/2021
-
-
 
 # RAPIDS
 
@@ -42,7 +39,12 @@ So we input an image into CNN and take the activations of the last layer before 
 ![Distance](../images/distance_vector.png)
   
 + Cosine of 0 degree is 1 and it is less than 1 for any other angle:
-![Formula](../images/formula.png)
+![Formula](../images/fo
+    df[['posting_id', 'matches']].to_csv('submission.csv', index = False)
+else:
+    df['image_predictions'] = image_predictions
+    df['text_predictions'] = text_predictions
+    df['matches'] = df.applyrmula.png)
   
 + And cosine distance would be one minus the cosine of the angle from point one to the origin to point two. This equals 0 when the points are the same, and 1 when the points are far away.
 
@@ -60,3 +62,11 @@ So we input an image into CNN and take the activations of the last layer before 
 ##  How similar is ArcFace concept to Siamese NN one?
 
 + If i understand correctly, they are different. With ArcFace you input one image at a time and get one embedding out. Next you compare images by comparing embeddings. With Siamese NN, you input a pair of images and the NN tells you if they are similar or not.
+
+# Bert training and test model
+
+reference in [here](https://www.kaggle.com/ragnar123/bert-baseline)
+
+## Bert
+
+## Bert with arcface

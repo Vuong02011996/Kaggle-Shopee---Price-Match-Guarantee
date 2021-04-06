@@ -39,7 +39,7 @@ def load_train_data():
 
 def getMetric(col):
     def f1score(row):
-        n = len( np.intersect1d(row.target,row[col]) )
+        n = len(np.intersect1d(row.target,row[col]) )
         return 2*n / (len(row.target)+len(row[col]))
     return f1score
 
@@ -213,13 +213,16 @@ def find_similar_phash_feature():
 
 # Compute CV Score
 
+
 def combine_for_sub(row):
     x = np.concatenate([row.preds,row.preds2, row.preds3])
     return ' '.join( np.unique(x) )
 
+
 def combine_for_cv(row):
     x = np.concatenate([row.preds,row.preds2, row.preds3])
     return np.unique(x)
+
 
 def compute_cv_score():
     if COMPUTE_CV:

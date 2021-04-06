@@ -23,16 +23,14 @@
 6. Training.
 7. Save weights.
 
-Ref 
-+ [BertBaseline](https://www.kaggle.com/ragnar123/bert-baseline)
-
-
-
 
 # Visualize data
 
 Reference [Discussion](https://www.kaggle.com/c/shopee-product-matching/discussion?sort=votes)
 
+# Submit model from ragnar in [here](https://www.kaggle.com/musha2017/shopee-external-models?select=bert_en_uncased_L-24_H-1024_A-16_1)
+
+# Download data tfrecord in [here]()
 
 # Create TFrecord
 

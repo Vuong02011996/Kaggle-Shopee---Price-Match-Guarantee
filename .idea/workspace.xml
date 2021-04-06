@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="179fc915-8f22-4d01-befe-214dfd00be0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/arcface.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/classification_cnn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/distance_vector.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/formula.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_EfficientNetB3_ArcMarginProduct.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/bert.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/submit_efficientnet_bert_from_ragnar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/install.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/install.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/note.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/submit_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/submit_code.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
