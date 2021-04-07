@@ -15,3 +15,9 @@ Referent from : [Chris deotte](https://www.kaggle.com/c/severstal-steel-defect-d
 + In kaggle : [kaggle](https://www.kaggle.com/cdeotte/rapids)
 
 + In colab: [colab](https://colab.research.google.com/drive/1rY7Ln6rEE1pOlfSHCYOVaqt8OvDO35J0#forceEdit=true&offline=true&sandboxMode=true)
+
++ In PC GPU: [here](https://rapids.ai/start.html) 
+
+        ```commandline
+        conda create -n rapids-0.18 -c rapidsai -c nvidia -c conda-forge -c defaults rapids-blazing=0.18 python=3.7 cudatoolkit=10.1
+        ```

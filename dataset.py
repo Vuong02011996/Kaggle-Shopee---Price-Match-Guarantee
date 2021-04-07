@@ -185,5 +185,7 @@ def find_matching_image_with_rapids():
 
 
 if __name__ == '__main__':
+    restrict_tensorflow_mem_with_gpu_ram()
     train = load_train_data()
-    displayDF(train)
+    # displayDF(train)
+    display_duplicated_items()

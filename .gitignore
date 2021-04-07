@@ -2,3 +2,4 @@ shopee-product-matching/*
 .idea/*
 .idea
 models/*
+shopee-tf-records-512-stratified/*
