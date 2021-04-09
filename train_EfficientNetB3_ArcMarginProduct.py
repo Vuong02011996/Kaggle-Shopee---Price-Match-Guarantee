@@ -1,6 +1,8 @@
 #!pip install -q efficientnet
 #!pip install tensorflow_addons
 # pip install kaggledatasets
+# pip install scikit-learnf
+from datetime import datetime
 import re
 import os
 import numpy as np
@@ -12,8 +14,8 @@ import efficientnet.tfkeras as efn
 from sklearn import metrics
 from sklearn.model_selection import KFold, train_test_split
 from tensorflow.keras import backend as K
-import tensorflow_addons as tfa
-from tqdm.notebook import tqdm
+# import tensorflow_addons as tfa
+# from tqdm.notebook import tqdm
 # from kaggle_datasets import KaggleDatasets
 
 # Default distribution strategy in Tensorflow. Works on CPU and single GPU.
@@ -27,7 +29,7 @@ AUTO = tf.data.experimental.AUTOTUNE
 GCS_PATH = './shopee-tf-records-512-stratified'
 
 # Configuration
-EPOCHS = 20
+EPOCHS = 50
 BATCH_SIZE = 4 * strategy.num_replicas_in_sync
 IMAGE_SIZE = [512, 512]
 # Seed
@@ -37,7 +39,7 @@ LR = 0.001
 # Verbosity
 VERBOSE = 2
 # Number of classes
-N_CLASSES = 11011
+N_CLASSES = 11014
 # Number of folds
 FOLDS = 5
 
@@ -165,9 +167,12 @@ def get_lr_callback():
             lr = lr_max
         else:
             lr = (lr_max - lr_min) * lr_decay ** (epoch - lr_ramp_ep - lr_sus_ep) + lr_min
+
+        tf.summary.scalar('learning rate', data=lr, step=epoch)
         return lr
 
     lr_callback = tf.keras.callbacks.LearningRateScheduler(lrfn, verbose=True)
+
     return lr_callback
 
 
@@ -280,6 +285,11 @@ def train_and_evaluate():
     # Seed everything
     seed_everything(SEED)
 
+    # Tensorboard
+    logdir = "logs/scalars/" + datetime.now().strftime("%Y%m%d-%H%M%S")
+    file_writer = tf.summary.create_file_writer(logdir + "/metrics")
+    file_writer.set_as_default()
+
     print('\n')
     print('-' * 50)
     train, valid = train_test_split(TRAINING_FILENAMES, shuffle=True, random_state=SEED)
@@ -289,21 +299,26 @@ def train_and_evaluate():
     val_dataset = val_dataset.map(lambda posting_id, image, label_group, matches: (image, label_group))
     STEPS_PER_EPOCH = count_data_items(train) // BATCH_SIZE
     K.clear_session()
+
+    lr_callback = get_lr_callback()
+    tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=logdir)
     model = get_model()
     # Model checkpoint
     checkpoint = tf.keras.callbacks.ModelCheckpoint(f'EfficientNetB3_{IMAGE_SIZE[0]}_{SEED}.h5',
                                                     monitor='val_loss',
                                                     verbose=VERBOSE,
-                                                    save_best_only=True,
-                                                    save_weights_only=True,
+                                                    # save_best_only=True,
+                                                    # save_weights_only=True,
                                                     mode='min')
 
     history = model.fit(train_dataset,
                         steps_per_epoch=STEPS_PER_EPOCH,
                         epochs=EPOCHS,
-                        callbacks=[checkpoint, get_lr_callback()],
+                        callbacks=[checkpoint, tensorboard_callback, lr_callback],
                         validation_data=val_dataset,
                         verbose=VERBOSE)
 
 
 train_and_evaluate()
+
+# %tensorboard --logdir logs/scalars

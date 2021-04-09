@@ -3,3 +3,7 @@ shopee-product-matching/*
 .idea
 models/*
 shopee-tf-records-512-stratified/*
+install.sh
+bert_en_uncased_L-24_H-1024_A-16_1/*
+EfficientNetB3_512_42.h5
+logs/*

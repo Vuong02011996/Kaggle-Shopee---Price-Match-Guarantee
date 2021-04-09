@@ -1,3 +1,5 @@
-tensorflow-gpu=2.3.0
+tensorflow-gpu==2.3.0
 opencv-python
 matplotlib
+pandas
+scikit-learn

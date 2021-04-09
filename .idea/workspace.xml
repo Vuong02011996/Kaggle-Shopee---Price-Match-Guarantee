@@ -1,15 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="023d753f-76cd-4e7a-9551-4dbd597309a0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tokenization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tranining_bert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/install.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/install.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_EfficientNetB3_ArcMarginProduct.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_EfficientNetB3_ArcMarginProduct.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,9 +51,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.train_EfficientNetB3_ArcMarginProduct">
     <configuration name="dataset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Kaggle-Shopee---Price-Match-Guarantee" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -46,13 +81,60 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="train_EfficientNetB3_ArcMarginProduct" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Kaggle-Shopee---Price-Match-Guarantee" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_EfficientNetB3_ArcMarginProduct.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tranining_bert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Kaggle-Shopee---Price-Match-Guarantee" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tranining_bert.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.train_EfficientNetB3_ArcMarginProduct" />
+        <item itemvalue="Python.tranining_bert" />
         <item itemvalue="Python.dataset" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="023d753f-76cd-4e7a-9551-4dbd597309a0" name="Default Changelist" comment="" />
@@ -62,5 +144,93 @@
       <updated>1617765957678</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="385" y="180" width="592" height="395" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617808951571">
+      <screen x="0" y="31" width="1366" height="688" />
+    </state>
+    <state x="385" y="180" width="592" height="395" key="#com.intellij.fileTypes.FileTypeChooser/0.31.1366.688@0.31.1366.688" timestamp="1617808951571" />
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1617955129479">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state width="1345" height="182" key="GridCell.Tab.0.bottom/0.31.1366.688@0.31.1366.688" timestamp="1617843338401" />
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom/0.31.1920.1000@0.31.1920.1000" timestamp="1617955129479" />
+    <state width="1899" height="285" key="GridCell.Tab.0.center" timestamp="1617955129478">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state width="1345" height="182" key="GridCell.Tab.0.center/0.31.1366.688@0.31.1366.688" timestamp="1617843338401" />
+    <state width="1899" height="285" key="GridCell.Tab.0.center/0.31.1920.1000@0.31.1920.1000" timestamp="1617955129478" />
+    <state width="1899" height="285" key="GridCell.Tab.0.left" timestamp="1617955129478">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state width="1345" height="182" key="GridCell.Tab.0.left/0.31.1366.688@0.31.1366.688" timestamp="1617843338401" />
+    <state width="1899" height="285" key="GridCell.Tab.0.left/0.31.1920.1000@0.31.1920.1000" timestamp="1617955129478" />
+    <state width="1899" height="285" key="GridCell.Tab.0.right" timestamp="1617955129479">
+      <screen x="0" y="31" width="1920" height="1000" />
+    </state>
+    <state width="1345" height="182" key="GridCell.Tab.0.right/0.31.1366.688@0.31.1366.688" timestamp="1617843338401" />
+    <state width="1899" height="285" key="GridCell.Tab.0.right/0.31.1920.1000@0.31.1920.1000" timestamp="1617955129479" />
+    <state width="1345" height="176" key="GridCell.Tab.1.bottom" timestamp="1617816248704">
+      <screen x="0" y="31" width="1366" height="688" />
+    </state>
+    <state width="1345" height="176" key="GridCell.Tab.1.bottom/0.31.1366.688@0.31.1366.688" timestamp="1617816248704" />
+    <state width="1899" height="408" key="GridCell.Tab.1.bottom/0.31.1920.1000@0.31.1920.1000" timestamp="1617791879816" />
+    <state width="1345" height="176" key="GridCell.Tab.1.center" timestamp="1617816248703">
+      <screen x="0" y="31" width="1366" height="688" />
+    </state>
+    <state width="1345" height="176" key="GridCell.Tab.1.center/0.31.1366.688@0.31.1366.688" timestamp="1617816248703" />
+    <state width="1899" height="408" key="GridCell.Tab.1.center/0.31.1920.1000@0.31.1920.1000" timestamp="1617791879815" />
+    <state width="1345" height="176" key="GridCell.Tab.1.left" timestamp="1617816248703">
+      <screen x="0" y="31" width="1366" height="688" />
+    </state>
+    <state width="1345" height="176" key="GridCell.Tab.1.left/0.31.1366.688@0.31.1366.688" timestamp="1617816248703" />
+    <state width="1899" height="408" key="GridCell.Tab.1.left/0.31.1920.1000@0.31.1920.1000" timestamp="1617791879815" />
+    <state width="1345" height="176" key="GridCell.Tab.1.right" timestamp="1617816248704">
+      <screen x="0" y="31" width="1366" height="688" />
+    </state>
+    <state width="1345" height="176" key="GridCell.Tab.1.right/0.31.1366.688@0.31.1366.688" timestamp="1617816248704" />
+    <state width="1899" height="408" key="GridCell.Tab.1.right/0.31.1920.1000@0.31.1920.1000" timestamp="1617791879816" />
+    <state x="319" y="31" width="906" height="688" key="SettingsEditor" timestamp="1617807470142">
+      <screen x="0" y="31" width="1366" height="688" />
+    </state>
+    <state x="319" y="31" width="906" height="688" key="SettingsEditor/0.31.1366.688@0.31.1366.688" timestamp="1617807470142" />
+    <state x="449" y="167" width="1022" height="732" key="SettingsEditor/0.31.1920.1000@0.31.1920.1000" timestamp="1617786324663" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/train_EfficientNetB3_ArcMarginProduct.py</url>
+          <line>262</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/train_EfficientNetB3_ArcMarginProduct.py</url>
+          <line>266</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/train_EfficientNetB3_ArcMarginProduct.py</url>
+          <line>313</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="dataset._GeneratorState" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

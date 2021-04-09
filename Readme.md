@@ -28,6 +28,15 @@
 
 Reference [Discussion](https://www.kaggle.com/c/shopee-product-matching/discussion?sort=votes)
 
+## Tensorboard
+
+Reference in [here](https://www.tensorflow.org/tensorboard/scalars_and_keras)
+
+## To log the loss scalar as you train, you'll do the following:
+
++ Create the Keras TensorBoard callback
++ Specify a log directory
++ Pass the TensorBoard callback to Keras' Model.fit().
 # Submit model from ragnar in [here](https://www.kaggle.com/musha2017/shopee-external-models?select=bert_en_uncased_L-24_H-1024_A-16_1)
 
 # Download data tfrecord in [here]()
