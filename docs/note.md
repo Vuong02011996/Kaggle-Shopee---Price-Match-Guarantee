@@ -70,3 +70,7 @@ reference in [here](https://www.kaggle.com/ragnar123/bert-baseline)
 ## Bert
 
 ## Bert with arcface
+
+# CNN input size explained 
+
+Reference in [here](https://www.kaggle.com/c/siim-isic-melanoma-classification/discussion/160147)

@@ -3,3 +3,4 @@ shopee-product-matching/*
 .idea
 models/*
 shopee-tf-records-512-stratified/*
+Data/*

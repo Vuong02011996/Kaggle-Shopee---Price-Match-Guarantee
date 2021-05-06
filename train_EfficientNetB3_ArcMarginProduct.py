@@ -14,7 +14,7 @@ from sklearn.model_selection import KFold, train_test_split
 from tensorflow.keras import backend as K
 import tensorflow_addons as tfa
 from tqdm.notebook import tqdm
-# from kaggle_datasets import KaggleDatasets
+from kaggle_datasets import KaggleDatasets
 
 # Default distribution strategy in Tensorflow. Works on CPU and single GPU.
 strategy = tf.distribute.get_strategy()
