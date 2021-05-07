@@ -64,6 +64,7 @@ def displayDF(train, random=False, COLS=6, ROWS=4, path=BASE):
 
 def display_duplicated_items():
     groups = train.label_group.value_counts()
+    print(groups.shape)
     plt.figure(figsize=(20, 5))
     plt.plot(np.arange(len(groups)), groups.values)
     plt.ylabel('Duplicate Count', size=14)
@@ -80,13 +81,62 @@ def display_duplicated_items():
     plt.show()
 
     # TOP 5 duplicated
-
     for k in range(5):
         print('#' * 40)
         print('### TOP %i DUPLICATED ITEM:' % (k + 1), groups.index[k])
         print('#' * 40)
         top = train.loc[train.label_group == groups.index[k]]
+
         displayDF(top, random=False, ROWS=2, COLS=4)
+
+
+def cv2_view(path=BASE):
+    groups = train.label_group.value_counts()
+    print(groups.shape)
+    size_image = 50
+    num_col = 20
+    # TOP 5 duplicated
+    for k in range(5):
+        print('#' * 40)
+        print('### TOP %i DUPLICATED ITEM:' % (k + 1), groups.index[k])
+        print('#' * 40)
+        top = train.loc[train.label_group == groups.index[k]]
+        image_name_list = top.image.values
+
+        num_img = 0
+        combine_image = None
+        num_row = 0
+
+        sample = cv2.imread(path + image_name_list[0])
+        sample = cv2.cvtColor(sample, cv2.COLOR_BGR2RGB)
+        sample = cv2.resize(sample, (size_image, size_image), interpolation=cv2.INTER_AREA)
+
+        for image_name in image_name_list[1:]:
+            arr_image = cv2.imread(path + image_name)
+            arr_image = cv2.cvtColor(arr_image, cv2.COLOR_BGR2RGB)
+            arr_image = cv2.resize(arr_image, (size_image, size_image), interpolation=cv2.INTER_AREA)
+
+            num_img += 1
+            if num_img % num_col == 0:
+                if combine_image is None:
+                    combine_image = sample
+                else:
+                    combine_image = np.concatenate((combine_image, sample), axis=0)
+                sample = arr_image
+                num_row += 1
+            else:
+                sample = np.concatenate((sample, arr_image), axis=1)
+            # cv2.imshow("window", arr_image)
+            # if cv2.waitKey(1) & 0xFF == ord('q'):
+            #     break
+            print("num_img", num_img)
+        plt.figure(figsize=(6 * 3.13, 4 * 3.13))
+        plt.imshow(combine_image)
+        plt.show()
+        # while True:
+        #     cv2.imshow("window", combine_image)
+        #     if cv2.waitKey(1) & 0xFF == ord('q'):
+        #         break
 
 
 def find_similar_titles_with_rapids_knn():
@@ -188,4 +238,5 @@ if __name__ == '__main__':
     restrict_tensorflow_mem_with_gpu_ram()
     train = load_train_data()
     # displayDF(train)
-    display_duplicated_items()
+    # display_duplicated_items()
+    cv2_view()

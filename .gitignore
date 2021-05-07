@@ -3,3 +3,8 @@ shopee-product-matching/*
 .idea
 models/*
 shopee-tf-records-512-stratified/*
+torch_implement/pytorch_model/*
+torch_implement/utils shopee/*.pt
+torch_implement/utils shopee/*.csv
+my_utils/*.csv
+.idea/workspace.xml

@@ -20,21 +20,33 @@ print('RAPIDS', cuml.__version__)
 print('TF', tf.__version__)
 
 
-def load_train_data():
-    COMPUTE_CV = True
 
-    test = pd.read_csv('../input/shopee-product-matching/test.csv')
-    print(len(test))
-    if len(test) > 3:
-        COMPUTE_CV = False
-    else:
-        print('this submission notebook will compute CV score, but commit notebook will not')
+COMPUTE_CV = True
 
-    train = pd.read_csv('../input/shopee-product-matching/train.csv')
-    tmp = train.groupby('label_group').posting_id.agg('unique').to_dict()
-    train['target'] = train.label_group.map(tmp)
-    print('train shape is', train.shape)
-    train.head()
+test = pd.read_csv('./shopee-product-matching/test.csv')
+print(len(test))
+if len(test) > 3:
+    COMPUTE_CV = False
+else:
+    print('this submission notebook will compute CV score, but commit notebook will not')
+
+train = pd.read_csv('./shopee-product-matching/train.csv')
+tmp = train.groupby('label_group').posting_id.agg('unique').to_dict()
+train['target'] = train.label_group.map(tmp)
+print('train shape is', train.shape)
+train.head()
+
+
+if COMPUTE_CV:
+    test = pd.read_csv('./shopee-product-matching/train.csv')
+    test_gf = cudf.DataFrame(test)
+    print('Using train as test to compute CV (since commit notebook). Shape is', test_gf.shape)
+else:
+    test = pd.read_csv('./shopee-product-matching/test.csv')
+    test_gf = cudf.read_csv('./shopee-product-matching/test.csv')
+    print('Test shape is', test_gf.shape)
+test_gf.head()
+
 
 
 def getMetric(col):
@@ -56,18 +68,6 @@ def compute_baseline_cv_score(train):
 
     train['f1'] = train.apply(getMetric('oof'), axis=1)
     print('CV score for baseline =', train.f1.mean())
-
-
-def compute_rapids_model_cv_and_infer_submission():
-    if COMPUTE_CV:
-        test = pd.read_csv('../input/shopee-product-matching/train.csv')
-        test_gf = cudf.DataFrame(test)
-        print('Using train as test to compute CV (since commit notebook). Shape is', test_gf.shape)
-    else:
-        test = pd.read_csv('../input/shopee-product-matching/test.csv')
-        test_gf = cudf.read_csv('../input/shopee-product-matching/test.csv')
-        print('Test shape is', test_gf.shape)
-    test_gf.head()
 
 
 class DataGenerator(tf.keras.utils.Sequence):
@@ -239,3 +239,6 @@ def write_submit_csv():
     test[['posting_id', 'matches']].to_csv('submission.csv', index=False)
     sub = pd.read_csv('submission.csv')
     sub.head()
+
+if __name__ == '__main__':
+    compute_baseline_cv_score(train)
