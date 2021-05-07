@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="023d753f-76cd-4e7a-9551-4dbd597309a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/check_models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/check_models/find_threshold_base_on_best_score.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/check_models/visualize_result.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_utils/image_embedding.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_utils/text_embedding.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/torch_implement/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/torch_implement/submit.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/submit_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/submit_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandas_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/pandas_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission_group.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,15 +31,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/torch_implement" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/output" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/output" />
       <recent name="$PROJECT_DIR$/torch_implement" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.dataset">
+  <component name="RunManager" selected="Python.pandas_process">
     <configuration name="dataset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Kaggle-Shopee---Price-Match-Guarantee" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,6 +83,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pandas_process" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Kaggle-Shopee---Price-Match-Guarantee" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pandas_process.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="submit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Kaggle-Shopee---Price-Match-Guarantee" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,27 +117,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/torch_implement/submit.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="submit_code" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Kaggle-Shopee---Price-Match-Guarantee" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/submit_code.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pandas_process" />
         <item itemvalue="Python.dataset" />
         <item itemvalue="Python.image_embedding" />
         <item itemvalue="Python.text_embedding" />
         <item itemvalue="Python.submit" />
-        <item itemvalue="Python.submit_code" />
       </list>
     </recent_temporary>
   </component>
@@ -228,6 +222,16 @@
           <line>135</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pandas_process.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pandas_process.py</url>
+          <line>129</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -237,15 +241,5 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="train.label_group.to_numpy()" language="Python" />
-        <watch expression="np.unique(label_group_arr)" language="Python" />
-        <watch expression="np.where(label_group_arr == label_group)[0]" language="Python" />
-        <watch expression="groups.index[0]" language="Python" />
-        <watch expression="groups.values" language="Python" />
-        <watch expression="top.image.values" language="Python" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

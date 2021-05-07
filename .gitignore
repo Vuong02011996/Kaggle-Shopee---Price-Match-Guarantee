@@ -10,3 +10,4 @@ my_utils/*.csv
 .idea/workspace.xml
 Data/*
 *.csv
+output/*

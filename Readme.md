@@ -35,3 +35,7 @@ Reference [Discussion](https://www.kaggle.com/c/shopee-product-matching/discussi
 # Create TFrecord
 
 [chdeotte](https://www.kaggle.com/cdeotte/how-to-create-tfrecords/notebook#How-To-Create-TFRecords)
+
+# Pandas
+
+https://pandas.pydata.org/docs/reference/api/pandas.Series.values.html

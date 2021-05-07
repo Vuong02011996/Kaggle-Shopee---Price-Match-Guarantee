@@ -5,10 +5,13 @@ import matplotlib.pyplot as plt
 import cv2
 
 
+file_result = './output/submission_0.31.csv'
+
+
 def view_result_group():
     train = pd.read_csv('./shopee-product-matching/train.csv')
     image_name = train["image"].values
-    submit_data = pd.read_csv('./Data/submission.csv')
+    submit_data = pd.read_csv(file_result)
     print(submit_data.head(10))
     list_id_image = submit_data.posting_id.values
     list_id_group = np.zeros(len(list_id_image))
@@ -16,6 +19,7 @@ def view_result_group():
 
     start_time = time.time()
     for i in range(len(matches)):
+        print("Processing...{}/{}".format(i, len(matches)))
         name_group = len(np.unique(list_id_group))
         data = matches[i].split(" ")
         if list_id_group[i] == 0.:
@@ -30,17 +34,17 @@ def view_result_group():
     submit_data.insert(submit_data.shape[-1], "image_name", image_name, True)
     submit_data.insert(submit_data.shape[-1], "group_name", list_id_group, True)
     print(submit_data.head(10))
-    submit_data.to_csv('submission_group.csv', index=False)
-    a = 0
+    submit_data.to_csv(file_result[:-4] + "_group.csv", index=False)
+
 
 def main():
     path = './shopee-product-matching/train_images/'
-    train = pd.read_csv('submission_group.csv')
+    train = pd.read_csv(file_result[:-4] + "_group.csv")
     print('train shape is', train.shape)
     train.head()
     groups = train.group_name.value_counts()
     print(groups.shape)
-    size_image = 200
+    size_image = 100
     num_col = 10
     for k in range(15):
         print('#' * 40)
@@ -81,6 +85,53 @@ def main():
         plt.show()
 
 
+def compare_target_output():
+    target_data = pd.read_csv('./shopee-product-matching/train.csv')
+    groups_output = target_data.label_group.value_counts()
+    print(groups_output.shape)
+
+
+    path = './shopee-product-matching/train_images/'
+    output_data = pd.read_csv(file_result[:-4] + "_group.csv")
+    print('train shape is', output_data.shape)
+    output_data.head()
+    groups_target = output_data.group_name.value_counts()
+    print(groups_target.shape)
+    size_image = 100
+    num_col = 10
+    for k in range(15):
+        print('#' * 40)
+        print('### TOP %i DUPLICATED ITEM:' % (k + 1), groups_target.index[k])
+
+        top_output = output_data.loc[output_data.group_name == groups_target.index[k]]
+        image_name_list_output = top_output.image_name.values
+
+        # TOP 5 duplicated
+        for k in range(15):
+            print('#' * 40)
+            print('### TOP %i DUPLICATED ITEM:' % (k + 1), groups_output.index[k])
+            print('#' * 40)
+            top_target = target_data.loc[target_data.label_group == groups_output.index[k]]
+            image_name_list_target = top_target.image.values
+            list_image_the_same1 = np.intersect1d(image_name_list_output, image_name_list_target)
+            list_image_the_same2 = np.intersect1d(image_name_list_target, image_name_list_output)
+            if len(list_image_the_same2) ==0 and len(list_image_the_same1) == 0:
+                continue
+            else:
+                list_image_the_diff = np.setdiff1d(image_name_list_output, image_name_list_target)
+                for image_name in list_image_the_diff:
+                    arr_image = cv2.imread(path + image_name)
+                    arr_image = cv2.cvtColor(arr_image, cv2.COLOR_BGR2RGB)
+                    arr_image = cv2.resize(arr_image, (size_image, size_image), interpolation=cv2.INTER_AREA)
+                    # plt.figure(figsize=(6 * 3.13, 4 * 3.13))
+                    plt.imshow(arr_image)
+                    plt.show()
+
+                    a = 0
+
+
+
+
 if __name__ == '__main__':
     # train = pd.read_csv('./shopee-product-matching/train.csv')
     # tmp = train.groupby('label_group').posting_id.agg('unique').to_dict()
@@ -89,4 +140,5 @@ if __name__ == '__main__':
     # train.head()
 
     # view_result_group()
-    main()
+    # main()
+    compare_target_output()
