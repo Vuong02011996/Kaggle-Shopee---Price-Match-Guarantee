@@ -27,8 +27,8 @@ def view_result_group():
             if list_id_group[index_match] == 0.:
                 list_id_group[index_match] = name_group
     print("process cost:", time.time() - start_time)
-    submit_data.insert(submit_data.shape[-1], "group_name", list_id_group, True)
     submit_data.insert(submit_data.shape[-1], "image_name", image_name, True)
+    submit_data.insert(submit_data.shape[-1], "group_name", list_id_group, True)
     print(submit_data.head(10))
     submit_data.to_csv('submission_group.csv', index=False)
     a = 0

@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="179fc915-8f22-4d01-befe-214dfd00be0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pandas_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/note.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_EfficientNetB3_ArcMarginProduct.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_EfficientNetB3_ArcMarginProduct.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandas_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/pandas_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission_group.csv" beforeDir="false" afterPath="$PROJECT_DIR$/submission_group.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,11 +122,6 @@
           <url>file://$PROJECT_DIR$/pandas_process.py</url>
           <line>86</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pandas_process.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

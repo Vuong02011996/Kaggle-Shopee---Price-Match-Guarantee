@@ -4,3 +4,4 @@ shopee-product-matching/*
 models/*
 shopee-tf-records-512-stratified/*
 Data/*
+*.csv
