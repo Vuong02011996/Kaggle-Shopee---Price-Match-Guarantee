@@ -8,3 +8,5 @@ torch_implement/utils shopee/*.pt
 torch_implement/utils shopee/*.csv
 my_utils/*.csv
 .idea/workspace.xml
+Data/*
+*.csv
